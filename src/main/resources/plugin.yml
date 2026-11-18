@@ -1,0 +1,28 @@
+name: EffectsArea
+version: 1.0.0
+main: com.effectsarea.EffectsArea
+api-version: '1.20'
+description: Create areas that give permanent potion effects.
+
+commands:
+  effectwand:
+    description: Get the selection wand.
+    usage: /effectwand
+    permission: effectsarea.admin
+  effectarea:
+    description: Create an area from your selection.
+    usage: /effectarea <name>
+    permission: effectsarea.admin
+  addeffect:
+    description: Add an effect to an area.
+    usage: /addeffect <name> <effect> <level>
+    permission: effectsarea.admin
+  removeeffect:
+    description: Remove an area.
+    usage: /removeeffect <name>
+    permission: effectsarea.admin
+
+permissions:
+  effectsarea.admin:
+    description: Allows using all EffectsArea commands.
+    default: op
